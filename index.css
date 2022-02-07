@@ -1,0 +1,28 @@
+body {
+    background-color: lightblue;
+  }
+header{
+    display: inline;
+    vertical-align: middle;
+}
+#menu li{
+    display: inline;
+    padding: 8px;
+    background-color: rgb(175, 199, 67);
+    border-radius: 10px;
+ }
+#menu li a{
+ color: white  !important;
+ text-decoration: none;
+} 
+
+#menu{
+    float: right;
+    color: beige;
+}
+.square {
+    height:60px;
+    width: 50px;
+    background-color: rgb(209, 105, 192);
+    float: right;    
+}
