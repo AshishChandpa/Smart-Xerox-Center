@@ -1,0 +1,61 @@
+.fixed-header,
+.fixed-footer {
+    width: 100%;
+    position: fixed;
+    padding: auto;
+}
+
+.fixed-header {
+    top: 0;
+}
+
+.fixed-footer {
+    bottom: 0;
+}
+.File{
+    padding-top: 1mm;
+    padding-left: 10mm;
+}
+
+.slot {
+    border-color: rgb(194, 243, 245);
+    margin: 1mm;
+    border-radius: 5px;
+
+}
+
+.slot:hover {
+    background-color: rgb(194, 243, 245);
+}
+
+.main {
+    height: 250px;
+    width: 500px;
+    border-radius: 5px;
+    background-color: white;
+    border-color: black;
+    border: 10mm;
+}
+
+#myTextBox {
+    padding: 100px;
+    padding-left: 165px;
+    padding-bottom: 110px;
+}
+
+#Next {
+    margin-right: 100px;
+    align-self: flex-end;
+}
+
+.btn {
+    background-color: inherit;
+    border: none;
+    margin-left: 560px;
+}
+/* .Time{
+    
+} */
+.Adjust{
+    margin-left: 10px;
+}

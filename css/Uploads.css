@@ -1,0 +1,53 @@
+.fixed-header, .fixed-footer{
+    width: 100%;
+    position: fixed;        
+    padding: auto;
+}
+.fixed-header{
+    top: 0;
+}
+.fixed-footer{
+    bottom: 0;
+}
+.File{
+    height: 300px;
+    width: 560px;
+    background-image: linear-gradient(rgb(194, 243, 245), rgb(197, 215, 247));
+    border: 10px;
+    padding: 2mm;
+}
+#slot{
+    border-color: rgb(194, 243, 245);
+    margin: 1mm;
+    border-radius: 5px;
+    
+}
+#slot:hover {
+    background-color: rgb(194, 243, 245);
+}            
+#bt{
+    background-color: inherit;
+    border: none;
+}
+.btn{
+    width: 15mm;
+    height: 8mm;
+    margin-left: 110mm; 
+    border-radius: 2mm;
+    background-color: #272343;
+    color:white;
+    position: absolute;
+    /* right: 10px; */
+}
+/* .container{
+ display:inline-flex;
+} */
+.Print{
+    margin-left: 50mm;
+}
+.Page{
+    margin: 1mm;
+}
+#Print{
+    margin-left: 30mm;
+}            
