@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/popup.css">
+    <link rel="stylesheet" href="/css/firstpage.css">
+    <link rel="stylesheet" href="/css/AddRequest.css">
+    <!-- <link rel="stylesheet" href="/css/Uploads.css"> -->
+</head>
+
+<body>
+    <header class="fixed-header">
+        <div class="container">
+
+            <div class="container">
+                <svg class="header" width="210px" height="49px">
+                    <rect width="400" height="100" style="fill:#272343;stroke-width:10;stroke:#272343" />
+                </svg>
+            </div>
+
+            <div class="container">
+                <ul id="menu">
+                    <li class="notification">&nbsp;&nbsp;&nbsp; &#128276;<br>Notification</li>
+                    <!-- <li id="icon" style="right: 10mm;" onclick="profile()">&#128100;<br>User</li> -->
+                    <a>
+                        <div class="dropdown" class="icon">
+                            <button onclick="myFunction()" class="dropbtn">&#128100;<br>User</button>
+                            <div id="myDropdown" class="dropdown-content">
+                                <a href=" ">Edit Profile</a>
+                                <a href=" ">Logout</a>
+                                <a>&copy;Printech 2022</a>
+                            </div>
+                        </div>
+                    </a>
+                </ul>
+            </div>
+            <script>
+                function myFunction() {
+                    document.getElementById("myDropdown").classList.toggle("show");
+                }
+                window.onclick = function (event) {
+                    if (!event.target.matches('.dropbtn')) {
+                        var dropdowns = document.getElementsByClassName("dropdown-content");
+                        var i;
+                        for (i = 0; i < dropdowns.length; i++) {
+                            var openDropdown = dropdowns[i];
+                            if (openDropdown.classList.contains('show')) {
+                                openDropdown.classList.remove('show');
+                            }
+                        }
+                    }
+                }
+            </script>
+        </div>
+
+    </header>
+
+    <div class="h">
+        <h1>Hey ! Get your First Print</h1>
+        <!-- <p><a href="AddRequest.html" target="_self"><input type="button" value="&#10133; Add Request"></a></p> -->
+
+        <!-- New POPup -->
+
+        <!-- Trigger/Open The Modal -->
+        <button id="myBtn">Add Request</button>
+    </div>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>
+                <!-- POPup Value Add request.html -->
+            <div class="File">
+                <div class="Adjust">Select Time Slot</div>
+                <div>
+                    <input class="slot" type="radio" name="Slot" value="8am - 9am">8am - 9am
+                    <input class="slot" type="radio" name="Slot" value="9am - 10am">9am - 10am
+                    <input class="slot" type="radio" name="Slot" value="10am - 11am">10am - 11am
+                    <input class="slot" type="radio" name="Slot" value="11am - 12pm">11am - 12pm
+                    <input class="slot" type="radio" name="Slot" value="12pm - 1pm">12pm - 1pm
+                    <input class="slot" type="radio" name="Slot" value="1pm - 2pm">1pm - 2pm
+                </div><br>
+                <div class="Adjust">Date</div>
+                <div>
+                    <input id="slot" type="date">&#128197;
+                </div><br>
+                <div class="Adjust">Document</div>
+                <div class="main">
+                    <button type="submit" id="myTextBox">Drag or Drop Document
+                        <br><input type="file" name="Drag" multiple>
+                    </button>
+                    <script>
+                        $(document).ready(function () {
+                            $('form input').change(function () {
+                                $('form p').text(this.files.length + " file(s) selected");
+                            });
+                        });
+                    </script>
+
+
+                </div>
+                <br>
+                <a style="text-decoration:none" href="">
+                    <a href="/Uploads.html"><input type="submit" class="btn" value="Next &#8594;"></a>
+                </a>
+            </div>
+            <br>
+            <a style="text-decoration:none">
+                <!-- <a href="/Uploads.html"><input type="submit" class="btn" value="Next &#8594;"> -->
+
+
+
+                <!--Upload.html Start-->
+                <button id="myBtn" class="btn">Next &#8594;</button>
+
+                <!-- The Modal -->
+                <div id="myModal" class="modal">
+
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+
+                        <!--<div class="File">
+                            <div>
+                                Your Uploads
+                                <div>
+                                    <textarea cols="60" rows="5" value="Uploads"> </textarea>
+                                </div><br>
+                                Print Orientation<a class="Print">Prints</a><br>
+                                <div class="container">
+                                    <button class="Page">&#128456; LandScape</button>
+                                    <button class="Page">&#128462; Portrait</button>
+                                    <!-&#128209; ->
+
+                                    <div id="Print">
+                                        <button class="Page">Stappel</button>
+                                        <button class="Page">Spiral</button>
+                                    </div>
+                                </div><br><br>
+                                Print Sides<br>
+                                <div class="container">
+                                    <button class="Page">&#128458; 1 Sided</button>
+                                    <button class="Page">&#128441; 2 Sided</button>
+                                </div>
+                                <br><br>
+                                <a style="text-decoration:none" href="">
+
+                                    <a href="/AddRequest.html"><button id="bt">&#8592; Back </button></a>
+                                    <a href=""><button class="btnDone">Done</button></a>
+                                </a>
+                            </div>
+
+                        </div>-->
+
+                        </p>
+                    </div>
+
+                </div>
+                <!-- Upload.html Over-->
+
+            </a>
+            <script src="/js/popup.js"></script>
+        </div>
+
+        <!-- POPup Over -->
+        </p>
+    </div>
+
+    </div>
+    <script >
+                // Get the modal
+                var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function () {
+    modal.style.display = "block";
+    body.style.display = "block";
+}
+// function AddRequest(){
+//     modal.style.display = "block";
+// }
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function () {
+    modal.style.display = "none";
+
+}
+
+    // When the user clicks anywhere outside of the modal, close it
+
+    </script>>
+
+    </script>
+
+    <!-- POPUP DONE -->
+
+    <!-- </div> -->
+
+    <footer class="fixed-footer">
+        <div class="container">
+            <div>
+                <svg class="footer" width="210px" height="49px">
+                    <rect width="400" height="100" style="fill:#272343;stroke-width:10;stroke:#272343" />
+                </svg>
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &copy;Printech 2022
+            </div>
+        </div>
+        <div class="container">
+            <div class="container"></div>
+            <ul id="menu">
+                <li style="right: 8mm;">About us</li><br>
+                <li style="right: 8mm;">Connect with us:&#9993; </li>
+            </ul>
+        </div>
+
+    </footer>
+</body>
+
+</html>
