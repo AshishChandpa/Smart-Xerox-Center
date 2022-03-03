@@ -1,0 +1,66 @@
+.main{
+  height: 500px;
+  width: 650px;
+  border-radius: 35px;
+  background-color: white;
+  margin-left: 290px;
+  margin-top: 55px;
+  margin-bottom: 90px;
+  }
+  
+  
+  .btn {
+    border: none;
+    background-color: inherit;
+    padding: 10px 30px ;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+  }
+  
+  .btn:hover {background: rgb(135, 223, 235);
+  border-radius: 30px;
+  }
+  
+  .login{color: rgb(218, 214, 214);
+  margin-left: 500px;
+  display: inline;
+  }
+  
+  
+  h1, p{
+    text-align: center;
+  }
+  
+  .column {
+    float: left;
+    width: 32%;
+    margin-left: 22px;
+  }
+  
+  .column img {
+    border-radius: 10px;
+    align-items: center;
+  }
+  
+  .column figcaption {
+    text-align: center;
+  }
+  
+  /* Clearfix (clear floats) */
+  .row {
+    display: flex;
+    padding: 10px;
+    margin-left: 24px;
+  }
+  
+  .img {
+    display: flex;
+  }
+  
+  body{
+    background-image: linear-gradient(rgb(194, 243, 245)
+    , rgb(197, 215, 247));
+  }
+  
+  

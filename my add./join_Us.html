@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    .main{
+        height: 500px;
+        width: 650px;
+        border-radius: 35px;
+        background-color: white;
+        margin-left: 290px;
+        margin-top: 55px;
+        margin-bottom: 90px;
+    }
+    .container{
+        display:inline-flex;
+        margin-top: 2px;
+    }
+    .btn {
+        border: none;
+        background-color: inherit;
+        padding: 10px 30px ;
+        font-size: 16px;
+        cursor: pointer;
+        display: inline-block;
+    }
+    .header{
+        padding: 3mm;
+    }
+    .btn:hover {
+        background: rgb(135, 223, 235);
+        border-radius: 30px;
+    }
+    .login{
+        color: rgb(218, 214, 214);
+        margin-left: 300px;
+        display: inline;
+    }
+    h1, p{
+        text-align: center;
+    }
+    /* Clearfix (clear floats) */    
+    body{
+        background-image: linear-gradient(rgb(194, 243, 245), rgb(197, 215, 247));
+    }
+    #glogin{
+        width: 50mm;
+        height: 8mm;
+        text-decoration:solid;
+        background-color: #272343;
+        color: whitesmoke;
+        font-weight: bold;
+        border-radius: 2mm;
+    }  
+    form{
+      padding-left: 30px;
+    }
+    label {
+        width:180px;
+        clear:left;
+        text-align:right;
+
+    }  
+    input{
+        outline:none;
+        border: 3px solid rgb(236, 236, 236);
+        border-radius: 3px;
+    
+        outline:none;
+        border: 3px solid rgb(236, 236, 236);
+        border-radius: 3px;
+    }
+    #sign{
+        width: 30mm;
+        height: 8mm;
+        text-decoration:solid;
+        color: rgb(245, 245, 245);
+        background-color: #272343;
+        font-weight: bold;
+        border-radius: 2mm;
+    }
+    #sign.hover{
+        background-color: #7e6deb;
+    }
+    .rows{
+        padding-left: 30mm;
+    }
+    h1{
+        color: #272343;   
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+</style>
+<!--<a href="login.css"><img src="whitebox_login.png"></a> -->
+</head>
+<body>
+    <div class="main">
+        <br/>
+        <div class="container">
+
+            <div class="container">
+                <svg class="header" width="210px" height="49px">
+                    <rect width="150" height="40" style="fill:#272343;stroke-width:10;stroke:#272343" />
+                </svg>
+            </div>
+            
+            <div class="container">
+                   <a style="text-decoration:none; padding: 10px;" href="login.html"><button class="btn login">Login</button></a>
+            </div>
+        </div>
+        <!-- New Action Over -->
+
+        <h1>Join Us</h1>
+        <p text-align="center">
+            <input id="glogin" type="submit" value="&#65319; Signup with Google">
+        </p>
+        <p>or</p><p>
+            <form action="" method="post">
+            <div class="rows">
+                
+                    <label for="email">Email</label>
+                    <input type="email" name="username" size="30" placeholder="vpedulink.ac.in"><br/><br/>
+                
+                    <label for="password">Password</label>
+                    <input type="password" name="password" size="30" placeholder="*Atleast 8 Character"><br/><br/>
+            
+                    <label for="ConfirmPassword">Confirm Password</label>
+                    <input type="password" name="ConfirmPassword" size="30" placeholder="*Atleast 8 Character"><br/><br/>
+            </div>
+            <p text-align="center">
+                <input id="sign" type="submit" value="SignUp"/>
+            </p>
+            </form>
+        </p>        
+    </div>
+</body>
+</html>

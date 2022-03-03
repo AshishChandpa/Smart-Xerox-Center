@@ -1,0 +1,175 @@
+<!doctype html>
+<head>
+    <title>First Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        *{
+            box-sizing:content-box;
+        }
+        header, footer{
+            background-color: aquamarine;
+            width: 100%;
+            position: fixed;        
+            padding: 10px 0;
+            background-image: linear-gradient(rgb(194, 243, 245), rgb(197, 215, 247));
+            /* add a gradient */
+        }
+        .header{
+            padding: 5mm;
+        }
+        .h {
+            text-align: center;
+            padding-top: 25mm;
+        }
+        .footer{
+            padding-top: 5mm;
+            padding-left: 5mm;
+        }
+        .fixed-header, .fixed-footer{
+            width: 100%;
+            position: fixed;        
+            padding: 10px 0;
+        }
+        .fixed-header{
+            top: 0;
+        }
+        .fixed-footer{
+            bottom: 0;
+        } 
+        .main{
+            padding:50mm;
+        }
+        @-ms-viewport{
+            width: device-width;
+        }
+        .cc{
+            display:inline-flex;
+            
+        }
+        .container{
+             display:inline-flex;    
+        }
+        #menu li{
+            display: inline;
+            padding: 8px;
+            text-decoration: none;
+            position: absolute; 
+        }   
+        #icon {
+            float: right;
+        }   
+        .dropbtn {
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        background-color: inherit;
+
+        display: flex;
+        align-self: flex-end;
+        
+        }
+        .dropdown {
+        position: fixed;
+        display: block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            /* background-color: #f1f1f1; */
+            min-width: 160px;
+            overflow: auto;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .show {display: block;}
+    </style>
+    <script>
+        // function addRequest() {
+        //     open(URL="AddRequest.html")
+        // }
+    </script>
+</head>
+<body>
+
+    <header class="fixed-header">
+    <div class="container">
+
+        <div class="container">
+            <svg class="header" width="210px" height="49px">
+                <rect width="400" height="100" style="fill:#272343;stroke-width:10;stroke:#272343" />
+            </svg>
+        </div>
+        
+        <div class="container" >
+            <ul id="menu">
+                <li id="icon" style="right: 28mm;">&nbsp;&nbsp;&nbsp; &#128276;<br>Notification</li>
+                <!-- <li id="icon" style="right: 10mm;" onclick="profile()">&#128100;<br>User</li> -->
+                <a >
+                <div class="dropdown" id="icon">
+                    <button onclick="myFunction()" class="dropbtn">&#128100;<br>User</button> 
+                    <div id="myDropdown" class="dropdown-content">
+                      <a href=" ">Edit Profile</a>
+                      <a href=" ">Logout</a>
+                      <a>&copy;Printech 2022</a>
+                    </div>
+                  </div></a>
+            </ul>
+        </div>
+        <script>
+              function myFunction() {
+              document.getElementById("myDropdown").classList.toggle("show");
+            }
+            window.onclick = function(event) {
+              if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                  var openDropdown = dropdowns[i];
+                  if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                  }
+                }
+              }
+            }
+            </script>        
+    </div>  
+      
+    </header>
+
+    <div class="main">
+        <div class="h">
+            <h1>Hey ! Get your First Print</h1>
+            <p><a href="AddRequest.html" target="_self"><input type="button" value="&#10133; Add Request"></a></p>
+        </div>
+    </div>
+
+    <footer class="fixed-footer">
+         <div class="container">
+        <div>
+            <svg class="footer" width="210px" height="49px">
+                <rect width="400" height="100" style="fill:#272343;stroke-width:10;stroke:#272343" />
+            </svg>
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &copy;Printech 2022
+        </div>
+        </div>
+        <div class="container">
+            <div class="container"></div>
+                <ul id="menu">  
+                    <li style="right: 28mm;">About us</li><br>
+                    <li style="right: 28mm;">Connect with us:&#9993;  </li>
+                </ul>            
+        </div>
+       
+    </footer>
+
+</body>
+</html>

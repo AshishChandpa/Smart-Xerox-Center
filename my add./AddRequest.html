@@ -1,0 +1,101 @@
+<!doctype html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            .fixed-header, .fixed-footer{
+                width: 100%;
+                position: fixed;        
+                padding: auto;
+            }
+            .fixed-header{
+                top: 0;
+            }
+            .fixed-footer{
+                bottom: 0;
+            }
+            .File{
+                height: 430px;
+                width: 560px;
+                background-image: linear-gradient(rgb(194, 243, 245), rgb(197, 215, 247));
+                border: 10px;
+                padding: 2mm;
+            }
+            .slot{
+                border-color: rgb(194, 243, 245);
+                margin: 1mm;
+                border-radius: 5px;
+                
+            }
+            .slot:hover {
+                background-color: rgb(194, 243, 245);
+            }
+            .main{
+                height: 250px;
+                width: 500px;
+                border-radius: 5px;
+                background-color: white;
+                border-color: black; 
+                border: 10mm;  
+            }
+            #myTextBox{
+                padding: 100px;
+                padding-left: 165px;
+                padding-bottom: 110px;
+            }
+            #Next{
+                margin-right: 100px;
+                align-self: flex-end;
+            }
+            .btn{
+                background-color: inherit;
+                border: none;
+                padding-left: 120mm;
+            }
+           
+        </style>
+    </head>
+    <body>
+        <header class="fixed-header">       
+              
+        </header>
+        <div class="File">
+            <div>
+                Select Time Slot
+                <div>
+                    <input class="slot" type="radio" name="Slot" value="8am - 9am">8am - 9am
+                    <input class="slot" type="radio" name="Slot" value="9am - 10am">9am - 10am
+                    <input class="slot" type="radio" name="Slot" value="10am - 11am">10am - 11am
+                    <input class="slot" type="radio" name="Slot" value="11am - 12pm">11am - 12pm
+                    <input class="slot" type="radio" name="Slot" value="12pm - 1pm">12pm - 1pm
+                    <input class="slot" type="radio" name="Slot" value="1pm - 2pm">1pm - 2pm
+                </div><br>
+                Date
+                <div>
+                    <input id="slot" type="date">&#128197;            
+                </div><br>
+                Document
+                <div class="main">
+                    <!-- <p class="drag">Drag your files here or click in this area.</p> -->
+                    <!-- <input type="file" id="myTextBox"> -->
+                    <button type="submit" id="myTextBox">Drag or Drop Document 
+                        <br><input type="file" name="Drag"></button>
+                    
+                    <script>
+                        $(document).ready(function(){
+                        $('form input').change(function () {
+                            $('form p').text(this.files.length + " file(s) selected");
+                        });
+                        });     
+                    </script>
+                    
+                </div><br>
+                <a style="text-decoration:none" href="">
+                    <a href="/Uploads.html"><input type="submit" class="btn" value="Next &#8594;"></a>
+                </a>
+            </div>
+            
+        </div>
+        <footer class="fixed-footer">
+        </footer>
+    </body>
+</html>
